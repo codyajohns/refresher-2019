@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int i = 0;
+	cout << "Hello! Cody hasn't written a program in forever. It is time for some FIZZ BUZZ ACTION\n Please enter a number!";
+	cin >> i;
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			cout << "Fizzbuzz\n";
+		}
+		else if (i % 3 == 0)
+		{
+			cout << "Fizz \n";
+		}
+		else if (i % 5 == 0)
+		{
+			cout << "Buzz\n";
+		}
+		else
+		{
+			cout << "WHY YOU NO DO SOMETHING FIZZ BUZZ RELATED\n";
+		}
+	
+	return 0;
+
+}
