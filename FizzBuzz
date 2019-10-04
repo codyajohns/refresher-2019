@@ -7,26 +7,53 @@ int main()
 {
 	int i = 0;
 	int x = 0;
+	int c = 0;
 	cout << "Please for the love of god help me I have 0 idea if I'm doing a PR right\n";
 	cout << "Hello! Cody hasn't written a program in forever. It is time for some FIZZ BUZZ ACTION\n Please enter a number!";
 	cin >> i;
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			cout << "Fizzbuzz\n";
-		}
-		else if (i % 3 == 0)
-		{
-			cout << "Fizz \n";
-		}
-		else if (i % 5 == 0)
-		{
-			cout << "Buzz\n";
-		}
-		else
-		{
-			cout << "WHY YOU NO DO SOMETHING FIZZ BUZZ RELATED\n";
-		}
-	
+	if (i % 3 == 0 && i % 5 == 0)
+	{
+		cout << "Fizzbuzz\n";
+	}
+	else if (i % 3 == 0)
+	{
+		cout << "Fizz \n";
+	}
+	else if (i % 5 == 0)
+	{
+		cout << "Buzz\n";
+	}
+	else
+	{
+		cout << "WHY YOU NO DO SOMETHING FIZZ BUZZ RELATED\n";
+	}
+	cout << "Do you want to enter another number? If so type 1 if not type anything else\n";
+	cin >> c;
+	if (c ==1 )
+	{
+		cin >> i;
+			if (i % 3 == 0 && i % 5 == 0)
+	{
+		cout << "Fizzbuzz\n";
+	}
+	else if (i % 3 == 0)
+	{
+		cout << "Fizz \n";
+	}
+	else if (i % 5 == 0)
+	{
+		cout << "Buzz\n";
+	}
+	else
+	{
+		cout << "WHY YOU NO DO SOMETHING FIZZ BUZZ RELATED\n";
+	}
+	}
+	else
+	{
+		return 0;
+	}
+
 	return 0;
 
 }
