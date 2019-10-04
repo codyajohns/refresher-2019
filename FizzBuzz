@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 //Test
-
+//Adding in comments
 
 int main()
 {
@@ -29,6 +29,7 @@ int main()
 	}
 	cout << "Do you want to enter another number? If so type 1 if not type anything else\n";
 	cin >> c;
+	//Doing the 2nd check of this bad program here
 	if (c ==1 )
 	{
 		cin >> i;
