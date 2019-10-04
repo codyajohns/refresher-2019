@@ -29,7 +29,6 @@ int main()
 	}
 	cout << "Do you want to enter another number? If so type 1 if not type anything else\n";
 	cin >> c;
-	//Doing the 2nd check of this bad program here
 	if (c ==1 )
 	{
 		cin >> i;
@@ -57,4 +56,16 @@ int main()
 
 	return 0;
 
+}
+
+int menu(int answer)
+{
+	int y;
+	switch (answer)
+	{
+	case 1:
+		cout << "How many numbers do you want to enter?\n";
+		cin >> y;
+	}
+	return 0;
 }
