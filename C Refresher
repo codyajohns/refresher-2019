@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char *argv [])
+{
+    int i=1;
+    int counternum=2;
+
+// desired output command:  DU -apath | sort -n -r | head -n # >outfile
+    // create cmd and initialize with DU
+    // if no args then append -a so cmd is "DU -a"
+    // if arg 2 is -dpath then append -apath to cmd
+    // if next arg is -s then append sort -n -r to cmd
+    // if next arg is -h# then append head -n # to cmd
+    // if next arg is -ofile then append >file to cmd
+    // anything else is invalid, arguments not in the specified order are invalid
+    // print cmd and execute cmd
+
+char* pipe = "|";
+char* du = "-a"; //followed by path
+char* sortparm = "sort -n -r";
+char* headparm = "head -n ";  //followed by #
+char* outparm = ">"; // followed by outfile
+
+//begin directory example
+    char cmd[80]="dir ";
+    char* dirparm ="/b";
+    strcat(cmd,"/b");
+    printf(cmd, "\n");  printf("\n");
+// execute the command
+    system(cmd);
+// end directory example
+
+    printf("Command  : ");
+    while(counternum<strlen(argv[0]))
+    {
+        printf("%c", argv[0][counternum]);
+        counternum++;
+    }
+
+//here
+
+    printf("\n");
+    return 0;
+}
